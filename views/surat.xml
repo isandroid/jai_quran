@@ -1,0 +1,49 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="jai_quran_surat_list">
+      <field name="name">lis surat</field>
+      <field name="model">jai_quran.surat</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="surat_nomor"/>
+          <field name="name"/>
+          <field name="surat_arti"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- Formulir -->
+
+    <record model="ir.ui.view" id="jai_quran_surat_form">
+      <field name="name">formulir surat</field>
+      <field name="model">jai_quran.surat</field>
+      <field name="arch" type="xml">
+        <form>
+            <sheet>
+                <group>
+                  <field name="surat_nomor"/>
+                  <field name="name"/>
+                  <field name="surat_arti"/>
+                  <field name="surat_pengantar"/>
+                </group>
+            </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="jai_quran_surat_action_window">
+      <field name="name">Jendela Surat</field>
+      <field name="res_model">jai_quran.surat</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- <menuitem name="Server to list" id="jai_quran" parent="jai_quran.menu_2"
+              action="jai_quran.action_server"/> -->
+
+  </data>
+</odoo>
