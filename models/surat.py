@@ -6,6 +6,7 @@ from odoo import models, fields, api
 class JaiQuranSurat(models.Model):
     _name = 'jai_quran.surat'
     _description = 'Data Surat'
+    _order = 'surat_nomor asc'
 
     name = fields.Char(
 	    	string="Nama Surat",
