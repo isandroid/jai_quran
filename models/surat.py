@@ -15,6 +15,8 @@ class JaiQuranSurat(models.Model):
     surat_arti = fields.Char(string="Arti Surat")
     surat_nomor = fields.Integer(string="Nomor Surat")
     surat_pengantar = fields.Html(string="Pengantar Surat")
+    ayat_ids = fields.One2many("jai_quran.ayat", "surat_nomor", string="Ayat-ayat")
+    surat_catatan = fields.Html(string="Catatan Surat")
 
     # value = fields.Integer()
 #     value2 = fields.Float(compute="_value_pc", store=True)

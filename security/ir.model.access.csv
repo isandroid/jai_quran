@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_jai_quran_surat_admin,"Akses Model Surat oleh Admin",model_jai_quran_surat,base.group_user,1,1,1,1
+access_jai_quran_ayat_admin,"Akses Model Ayat oleh Admin",model_jai_quran_ayat,base.group_user,1,1,1,1

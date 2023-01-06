@@ -1,0 +1,53 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="jai_quran_ayat_list">
+      <field name="name">Lis Ayat</field>
+      <field name="model">jai_quran.ayat</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="surat_nomor"/>
+          <field name="ayat_nomor"/>
+          <field name="ayat_teks_arab"/>
+          <field name="ayat_teks_indonesia"/>
+          <!-- <field name="ayat_catatan"/> -->
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- Formulir -->
+
+    <record model="ir.ui.view" id="jai_quran_ayat_form">
+      <field name="name">Formulir Ayat</field>
+      <field name="model">jai_quran.ayat</field>
+      <field name="arch" type="xml">
+        <form>
+            <sheet>
+                <group>
+                  <field name="surat_nomor"/>
+                  <field name="ayat_nomor"/>
+                  <field name="ayat_teks_arab"/>
+                  <field name="ayat_teks_indonesia"/>
+                  <field name="ayat_catatan"/>
+                </group>
+            </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="jai_quran_ayat_action_window">
+      <field name="name">Jendela Ayat</field>
+      <field name="res_model">jai_quran.ayat</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- <menuitem name="Server to list" id="jai_quran" parent="jai_quran.menu_2"
+              action="jai_quran.action_server"/> -->
+
+  </data>
+</odoo>

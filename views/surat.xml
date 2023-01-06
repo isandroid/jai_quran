@@ -26,7 +26,9 @@
                   <field name="surat_nomor"/>
                   <field name="name"/>
                   <field name="surat_arti"/>
+                  <field name="ayat_ids"/>
                   <field name="surat_pengantar"/>
+                  <field name="surat_catatan"/>
                 </group>
             </sheet>
         </form>

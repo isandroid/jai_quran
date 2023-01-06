@@ -49,6 +49,11 @@
         parent="jai_quran_menu_root"
         action="jai_quran_surat_action_window"/>
 
+    <menuitem name="Daftar Ayat" 
+        id="jai_quran_ayat_menu"
+        parent="jai_quran_menu_root"
+        action="jai_quran_ayat_action_window"/>
+
     <!-- <menuitem name="Server to list" id="jai_quran" parent="jai_quran.menu_2"
               action="jai_quran.action_server"/> -->
 
