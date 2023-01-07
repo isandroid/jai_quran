@@ -25,6 +25,7 @@
         'security/ir.model.access.csv',
         'views/surat.xml',
         'views/ayat.xml',
+        'views/tafsir.xml',
         'views/views.xml',
     ],
     # only loaded in demonstration mode

@@ -2,3 +2,4 @@
 
 from . import surat
 from . import ayat
+from . import tafsir
