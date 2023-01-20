@@ -9,6 +9,7 @@ class JaiQuranTafsir(models.Model):
 
     name = fields.Char(string="Nomor Tafsir")
     tafsir_isi = fields.Html("Isi Tafsir")
+    tafsir_catatan = fields.Html("Catatan Tafsir")
 
 #     description = fields.Text()
 #

@@ -12,6 +12,7 @@ class JaiQuranAyat(models.Model):
     ayat_teks_arab = fields.Html(string="Teks Arab")
     ayat_teks_indonesia = fields.Html(string="Teks Indonesia")
     tafsir_ids = fields.Many2many("jai_quran.tafsir", string="Tafsir")
+    juz = fields.Integer(string="Juz")
     ayat_catatan = fields.Html(string="Keterangan")
 #
 #     @api.depends('value')

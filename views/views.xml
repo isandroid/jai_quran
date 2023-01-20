@@ -44,19 +44,22 @@
 
     <menuitem name="Quran" id="jai_quran_menu_root"/>
 
-    <menuitem name="Daftar Surat" 
-        id="jai_quran_surat_menu"
-        parent="jai_quran_menu_root"
-        action="jai_quran_surat_action_window"/>
-
     <menuitem name="Daftar Ayat" 
         id="jai_quran_ayat_menu"
         parent="jai_quran_menu_root"
+        sequence="1"
         action="jai_quran_ayat_action_window"/>
 
-    <menuitem name="Daftar Tafsir" 
-        id="jai_quran_ayat_menu"
+    <menuitem name="Daftar Surat" 
+        id="jai_quran_surat_menu"
         parent="jai_quran_menu_root"
+        sequence="2"
+        action="jai_quran_surat_action_window"/>
+
+    <menuitem name="Daftar Tafsir" 
+        id="jai_quran_tafsir_menu"
+        parent="jai_quran_menu_root"
+        sequence="3"
         action="jai_quran_tafsir_action_window"/>
 
     <!-- <menuitem name="Server to list" id="jai_quran" parent="jai_quran.menu_2"

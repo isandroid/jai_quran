@@ -9,10 +9,11 @@
         <tree>
           <field name="surat_nomor"/>
           <field name="ayat_nomor"/>
-          <!-- <field name="ayat_teks_arab"/> -->
-          <!-- <field name="ayat_teks_indonesia"/> -->
-          <field name="tafsir_ids" widget="many2many_tags"/>
-          <!-- <field name="ayat_catatan"/> -->
+          <field name="ayat_teks_arab" optional="hide"/>
+          <field name="ayat_teks_indonesia" optional="hide"/>
+          <field name="tafsir_ids" widget="many2many_tags" optional="hide"/>
+          <field name="juz" optional="hide"/>
+          <field name="ayat_catatan" optional="hide"/>
         </tree>
       </field>
     </record>
@@ -32,6 +33,7 @@
                   <field name="ayat_teks_arab"/>
                   <field name="ayat_teks_indonesia"/>
                   <field name="tafsir_ids"/>
+                  <field name="juz"/>
                   <field name="ayat_catatan"/>
                 </group>
             </sheet>

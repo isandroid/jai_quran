@@ -8,8 +8,8 @@
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <!-- <field name="ayat_id"/> -->
-          <!-- <field name="tafsir_isi"/> -->
+          <field name="tafsir_isi" optional="hide"/>
+          <field name="tafsir_catatan" optional="hide"/>
         </tree>
       </field>
     </record>
@@ -25,6 +25,7 @@
                 <group>
                   <field name="name"/>
                   <field name="tafsir_isi"/>
+                  <field name="tafsir_catatan"/>
                 </group>
             </sheet>
         </form>
